@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#night_sky {
+    background-color: black;
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.star {
+    background: url(./images/star.png) ;
+    display: inline-block;
+    background-size: cover;
+    animation: starBlink 2s alternate infinite;
+    position: absolute;
+} 
+.star:hover{
+    transform: scale(3, 3) rotate(180deg) !important;
+    transition: all 1s;
+}
+@keyframes starBlink {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
